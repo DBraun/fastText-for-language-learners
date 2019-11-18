@@ -30,9 +30,9 @@ Next, I needed to decide in what order I would learn the words. Thinking back to
 
 Thus I had my list of 4000 Korean words/definitions in the order I wanted to learn them. I ran the same experiment on words I already knew, the 1000 most common words. These are some fun observations.
 
-First of all, my algorithm succeeded. Words that are similar in subject matter are definitely close to each other.
+First of all, the UMAP aspect of the algorithm succeeded. Words that are similar in subject matter are definitely close to each other. The rest of my sorting algorithm is premised entirely on this assumption.
 
-Second of all, antonyms often get placed in clusters, which is good. 작다, 크다, 깊다, 적다, 높다, 낮다, 넓다 appear nearby. Those words mean small, big, deep, few, high, low, and wide. My vocabulary sorting algorithm will visit this cluster once, pick a word, and then need to wait a long time before coming back for another. I'd be less likely to confuse 작다 and 적다 for example. Don't they look similar? 작다 is "small" and 적다 is "few (not many)". I bet lots of Korean learners learn these within a week of each other and struggle.
+Second, antonyms often get placed in clusters, which is good. 작다, 크다, 깊다, 적다, 높다, 낮다, 넓다 appear nearby. Those words mean small, big, deep, few, high, low, and wide. My vocabulary sorting algorithm will visit this cluster once, pick a word, and then need to wait a long time before coming back for another. I'd be less likely to confuse 작다 and 적다 for example. Don't they look similar? 작다 is "small" and 적다 is "few (not many)". I bet lots of Korean learners learn these within a week of each other and struggle.
 
 The words for 대통령, 선거, and 정치, appear near each other. These words mean President, election, and politics. Also nearby is 문, which means "Door." Door is one of the 1000 most common words, but the reason it appears next to political words is because 문 is the surname of Korea's current [President](https://en.wikipedia.org/wiki/Moon_Jae-in). His 문 surname almost certainly means "writing." "Door" is a possible, but incorrect, interpretation. Perhaps if someone else were President, "Door" would appear closer to words like "entrance" or "exit."
 
