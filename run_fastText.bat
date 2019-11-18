@@ -1,0 +1,1 @@
+cat queries.txt | fasttext.exe print-word-vectors cc.ko.300.bin > output.txt
